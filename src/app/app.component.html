@@ -1,0 +1,26 @@
+<h1>Caesarverschlüsselung</h1>
+<body>
+  <div class="container">
+    <label>Bitte geben Sie Ihren zu verschlüsselnden Text im folgenen Bereich ein:</label>
+    <fieldset id="a">
+        <input #inputText id="input-text">
+    </fieldset>
+    <label>Verschiebungswert</label>
+    <fieldset id="offsetfiled">
+        <input #offset id = "offset" type = "number" (click)="setOffset(offset.value)" (blur)="setOffset(offset.value)" min="1" required>
+    </fieldset>
+    <button type="button" class="add-button" (click)="codeText(inputText.value)">
+        Verschlüsseln
+    </button>
+    <button type="button" class="add-button" (click)="decodeText(inputText.value)">
+        Entschlüsseln
+    </button>
+  </div>
+
+  <div class="output">  
+    <fieldset id="b">
+        <label>Ergebnis des verschlüsselten Textes</label>
+    </fieldset> 
+    <textarea id = "outputTextareaBox" rows = "4" cols = "40">{{cipherText}}</textarea>
+  </div>
+</body>
