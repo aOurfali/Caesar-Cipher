@@ -42,37 +42,23 @@ input[type=number] {
 button {
     margin-top: 20px;
     margin-right: .5rem;
-    background-color: rgb(207, 232, 238);
+    background-color: rgb(255, 255, 255);
     padding: 1rem;
     border-radius: 4px;
     font-size: 1rem;
 }
 
-fieldset[a] {
+fieldset[id=offsetfiled] {
     border: 5px;
     font-family: m;
-    font-size: 1.5em;
-    padding: 15px;
-}
-
-fieldset[b] {
-    border: 5px;
-    font-family: m;
-    font-size: 1.5em;
-    padding: 15px;
-}
-
-fieldset[c] {
-    border: 5px;
-    font-family: m;
-    font-size: 1.5em;
+    font-size: 2em;
     padding: 15px;
 }
 
 fieldset {
     border: 5px;
     font-family: m;
-    font-size: 2em;
+    font-size: 1em;
     padding: 15px;
 }
 
@@ -91,7 +77,7 @@ label {
 textarea {
     border: 5%;
     width: 45%;
-    height: 3rem;
+    height: 6rem;
     background-color: rgb(252, 229, 229);
     text-align: left;
     font-size: 1.5em;
